@@ -52,9 +52,7 @@ staticRenderFns: [],
       this$1.isShow = true;
     }, 50);
 
-    if (!this.fullOptions.closeBtn) {
-      this._startLazyAutoDestroy();
-    }
+    this._startLazyAutoDestroy();
   },
   methods: {
     // Public
@@ -77,14 +75,10 @@ staticRenderFns: [],
       }
     },
     _startTimer: function _startTimer() {
-      if (!this.fullOptions.closeBtn) {
-        this._startLazyAutoDestroy();
-      }
+      this._startLazyAutoDestroy();
     },
     _stopTimer: function _stopTimer() {
-      if (!this.options.closeBtn) {
-        this._clearTimer();
-      }
+      this._clearTimer();
     }
   }
 };
