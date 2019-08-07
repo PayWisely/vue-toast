@@ -67,9 +67,7 @@ export default {
       this.isShow = true
     }, 50)
 
-    if (!this.fullOptions.closeBtn) {
-      this._startLazyAutoDestroy()
-    }
+    this._startLazyAutoDestroy()
   },
   methods: {
     // Public
@@ -90,14 +88,10 @@ export default {
       }
     },
     _startTimer() {
-      if (!this.fullOptions.closeBtn) {
-        this._startLazyAutoDestroy()
-      }
+      this._startLazyAutoDestroy()
     },
     _stopTimer() {
-      if (!this.options.closeBtn) {
-        this._clearTimer()
-      }
+      this._clearTimer()
     }
   }
 }
